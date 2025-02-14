@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         // PDF-a sortzeko botoia
         document.getElementById("generatePdf").addEventListener("click", function () {
-            getBase64Image("logo.png", function (base64Image) {
+            getBase64Image("img/logo.png", function (base64Image) {
                 const doc = new window.jspdf.jsPDF();
                 generarPDF(doc, base64Image);
             });
